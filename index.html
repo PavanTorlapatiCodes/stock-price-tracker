@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Market Price Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <h1>Stock Market Price Tracker & Alert System</h1>
+
+    <form method="POST">
+        <input type="text" name="symbol" placeholder="Enter Stock Symbol (e.g., GOOGL)" required>
+        <input type="number" step="0.01" name="threshold" placeholder="Enter Alert Threshold" required>
+        <button type="submit">Fetch Stock</button>
+    </form>
+
+    {% if error %}
+        <h3 style="color:red;">{{ error }}</h3>
+    {% endif %}
+
+    {% if price %}
+        <h2>Latest Price: {{ price }}</h2>
+    {% endif %}
+
+    {% if alert %}
+        <h3>{{ alert }}</h3>
+    {% endif %}
+
+    {% if stock_data %}
+        <div>
+            {{ stock_data | safe }}
+        </div>
+    {% endif %}
+
+</body>
+</html>
