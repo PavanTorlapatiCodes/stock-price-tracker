@@ -39,15 +39,38 @@ Tools
 
 ---
 
-## 📂 Project Structure
-git clone https://github.com/pavantorlapati/stock-market-dashboard.git
+## 📂 Project Structure   
+PythonProject3/
+│
+├── app.py
+├── stock_data.csv
+│
+├── static/
+│ ├── style.css
+│ ├── particles.js
+│ └── stocks.js
+│
+└── templates/
+└── index.html  
+
+---
+
+## ⚙️ Installation
+
+Clone the repository
+
+git clone https://github.com/pavantorlapati/stock-market-dashboard.git 
 
 Navigate into the folder
+cd stock-dashboard 
 
+Install dependencies
+
+pip install flask pandas numpy requests
 Run the application
-
+python app.py
 Open browser
-
+http://127.0.0.1:5000/
 ---
 
 ## 📊 Example Dashboard
