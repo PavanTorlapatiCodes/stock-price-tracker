@@ -59,7 +59,7 @@ PythonProject3/
 
 Clone the repository
 
-git clone https://github.com/pavantorlapati/stock-market-dashboard.git 
+git clone https://github.com/PavanTorlapatiCodes/stock-price-tracker.git
 
 Navigate into the folder
 cd stock-dashboard 
